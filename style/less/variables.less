@@ -1,0 +1,39 @@
+/*========== COLORS =========*/
+
+@blue: #4bcaff;
+@blue-x2: lighten(@blue, 20%);
+
+@ocean: #39444b;
+@ocean-x1: lighten(@ocean, 20%);
+@ocean-x2: lighten(@ocean, 40%);
+
+
+/*========== FONTS =========*/
+@import (inline) "fonts.css";
+@font: Segoe;
+.font (@style, @color:#000, @size:100%)
+{
+    font-family: @font @style;
+    color: @color;
+    font-size: @size;
+}
+.no-padding ()
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.flex ()
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transition (@time)
+{
+    transition: @time ease all;
+}
+
