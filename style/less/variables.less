@@ -11,6 +11,7 @@
 /*========== FONTS =========*/
 @import (inline) "fonts.css";
 @font: Segoe;
+
 .font (@style, @color:#000, @size:100%)
 {
     font-family: @font @style;
@@ -35,5 +36,14 @@
 .transition (@time)
 {
     transition: @time ease all;
+}
+.line(@color){
+    &:after{
+        content: "";
+        width: 40px;
+        display: block;
+        margin-top: 5px;
+        border-bottom: 1px solid @color;
+    }
 }
 
