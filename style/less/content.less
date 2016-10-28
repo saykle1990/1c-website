@@ -2,10 +2,15 @@
 .blue-bg{
     background: @blue;
 }
-.navigation{
-    padding: 45px 0;
+.content-post{
+    padding-bottom: 100px;
 }
+.navigation{
+    padding-bottom:80px;
+}
+
 .title{
+    margin: 70px 0 40px 0;
     &-white{
         .font(@style: '',#fff,150%);
         text-transform: uppercase;
@@ -21,11 +26,12 @@
 .adds{
     li{
         text-align: center;
+        vertical-align: middle;
         figure{
             img{
                 display: block;
                 margin: 0 auto;
-                width: 100%;
+                border: 1px solid #fff;
             }
         }
         a{
@@ -36,4 +42,35 @@
             text-transform: uppercase;
         }
     }
+}
+ul.text{
+     li {
+         margin-left: 10px;
+         &:before{
+             content: "";
+             display: inline-block;
+             width: 5px;
+             height: 5px;
+             background: @blue;
+             vertical-align: middle;
+             margin-right: 10px;
+         }
+         &:first-child{
+              margin-top: 20px;
+         }
+        }
+    p{
+        margin-top: 20px;
+    }
+}
+.certificate{
+    text-align: center;
+    height: 399px;
+}
+.text-block{
+    .flex();
+}
+.our-clients{
+    height: 500px;
+    background: @ocean;
 }

@@ -30,3 +30,16 @@
     src: url(../fonts/segoeuisym.ttf);
 }
 
+.text {
+  margin-bottom: 30px;
+}
+.text-black {
+  font-family: Segoe '';
+  color: #39444b;
+  font-size: 100%;
+}
+.text-white {
+  font-family: Segoe '';
+  color: #ffffff;
+  font-size: 100%;
+}

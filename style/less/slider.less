@@ -1,0 +1,45 @@
+@import 'variables.less';
+
+.slick-slider{
+    overflow: hidden;
+    background: @ocean;
+    .slide{
+        position: relative;
+        margin: 0 auto;
+        .slide-text{
+            .flex;
+            z-index: 12;
+            position: absolute;
+            top: 40%;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+           .eye-stopper{
+            display: table;
+            .font(light,#fff,200%);
+            text-transform: uppercase;
+            background: @ocean;
+            padding: 5px 10px;
+            text-align: center;
+            margin: 10px auto;
+        }
+        }
+    }
+    figure{
+        display: inline-block;
+        width: 180px;
+        height: 180px;
+        margin: 0 25px 0 0;
+        border: 2px solid #fff;
+        img{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    &.clients-slick{
+        height: 300px;
+        overflow: hidden;
+    }
+
+
+}
