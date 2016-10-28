@@ -114,7 +114,7 @@ header {
   background: #4bcaff;
 }
 .navigation {
-  padding: 75px 0;
+  padding: 45px 0;
 }
 .title-white {
   font-family: Segoe '';
@@ -141,4 +141,21 @@ header {
   display: block;
   margin-top: 5px;
   border-bottom: 1px solid #39444b;
+}
+.adds li {
+  text-align: center;
+}
+.adds li figure img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.adds li a {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  font-family: Segoe '';
+  color: #ffffff;
+  font-size: 100%;
+  text-transform: uppercase;
 }

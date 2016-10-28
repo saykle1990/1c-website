@@ -1,0 +1,39 @@
+@import 'variables.less';
+.blue-bg{
+    background: @blue;
+}
+.navigation{
+    padding: 45px 0;
+}
+.title{
+    &-white{
+        .font(@style: '',#fff,150%);
+        text-transform: uppercase;
+        .line(#fff);
+    }
+    &-black{
+        .font(@style: '',@ocean,150%);
+        text-transform: uppercase;
+        .line(@ocean);
+    }
+
+}
+.adds{
+    li{
+        text-align: center;
+        figure{
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+        a{
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            .font(@style: '',#fff,100%);
+            text-transform: uppercase;
+        }
+    }
+}
