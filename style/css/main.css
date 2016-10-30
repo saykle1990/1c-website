@@ -43,6 +43,9 @@
   color: #ffffff;
   font-size: 100%;
 }
+.blue {
+  color: #4bcaff;
+}
 p,
 a,
 ul,
@@ -136,17 +139,25 @@ header {
 }
 .slick-slider figure {
   display: inline-block;
+  position: relative;
   width: 180px;
   height: 180px;
   margin: 0 25px 0 0;
   border: 2px solid #fff;
+  text-align: center;
 }
 .slick-slider figure img {
-  width: 50%;
+  display: block;
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 134px;
   margin: 0 auto;
 }
 .slick-slider.clients-slick {
-  height: 300px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 .blue-bg {
@@ -187,6 +198,15 @@ header {
   margin-top: 5px;
   border-bottom: 1px solid #39444b;
 }
+.adds {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .adds li {
   text-align: center;
   vertical-align: middle;
@@ -205,10 +225,10 @@ header {
   font-size: 100%;
   text-transform: uppercase;
 }
-ul.text li {
+.text li {
   margin-left: 10px;
 }
-ul.text li:before {
+.text li:before {
   content: "";
   display: inline-block;
   width: 5px;
@@ -217,10 +237,18 @@ ul.text li:before {
   vertical-align: middle;
   margin-right: 10px;
 }
-ul.text li:first-child {
+.text li:first-child {
   margin-top: 20px;
 }
-ul.text p {
+.text-black {
+  margin-top: 30px;
+}
+.text-white {
+  font-family: Segoe light;
+  color: #ffffff;
+  font-size: 100%;
+}
+.text p {
   margin-top: 20px;
 }
 .certificate {
@@ -239,4 +267,51 @@ ul.text p {
 .our-clients {
   height: 500px;
   background: #39444b;
+  color: #fff;
+}
+.contacts {
+  background: url(/images/pexels-photo-113850.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+.contacts .form-group {
+  margin: 25px 0;
+  overflow: hidden;
+  display: block;
+}
+.contacts .form-group label {
+  text-transform: uppercase;
+  font-family: Segoe '';
+  color: #ffffff;
+  font-size: 100%;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.contacts .form-group input[type="text"],
+.contacts .form-group textarea {
+  font-size: 18px;
+  color: #fff;
+  padding: 15px 5px;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.contacts .form-group input[type="submit"] {
+  margin-top: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #4bcaff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  border: 0;
+  font-family: Segoe bold;
+  color: #ffffff;
+  font-size: 100%;
+}
+.contacts .for-user-info li:nth-child(3) {
+  margin-top: 10px;
+}
+.contacts span.blue {
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 40px;
 }

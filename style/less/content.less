@@ -24,6 +24,7 @@
 
 }
 .adds{
+    .flex;
     li{
         text-align: center;
         vertical-align: middle;
@@ -43,7 +44,7 @@
         }
     }
 }
-ul.text{
+.text{
      li {
          margin-left: 10px;
          &:before{
@@ -59,6 +60,12 @@ ul.text{
               margin-top: 20px;
          }
         }
+    &-black{
+        margin-top: 30px;
+    }
+    &-white{
+        .font(light,#fff,100%);
+    }
     p{
         margin-top: 20px;
     }
@@ -73,4 +80,51 @@ ul.text{
 .our-clients{
     height: 500px;
     background: @ocean;
+    color: #fff;
+}
+.contacts{
+    background: url(/images/pexels-photo-113850.png)no-repeat 50% 50%;
+    background-size: cover;
+    .form-group{
+        margin: 25px 0;
+        overflow: hidden;
+        display: block;
+        label{
+            text-transform: uppercase;
+            .font(@style: '',#fff,100%);
+            padding-left: 0;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea{
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 5px;
+            background: transparent;
+            border: 2px solid #fff;
+        }
+        input[type="submit"]{
+            margin-top: 40px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background: @blue;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            border: 0;
+            .font(bold,#fff,100%);
+        }
+    }
+    .for-user-info{
+        li{
+            &:nth-child(3) {
+                margin-top: 10px;
+            }
+        }
+    }
+    span.blue{
+        margin-bottom: 10px;
+        display: block;
+        margin-top: 40px;
+    }
 }
