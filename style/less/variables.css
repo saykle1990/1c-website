@@ -30,6 +30,10 @@
     src: url(../fonts/segoeuisym.ttf);
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .text {
   margin-bottom: 30px;
 }

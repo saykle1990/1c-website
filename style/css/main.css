@@ -30,6 +30,10 @@
     src: url(../fonts/segoeuisym.ttf);
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .text {
   margin-bottom: 30px;
 }
@@ -54,7 +58,7 @@ span {
   font-family: Segoe;
 }
 header {
-  background: rgba(57, 68, 75, 0.9);
+  background: #39444b;
   height: 145px;
   position: absolute;
   top: 0;
@@ -63,14 +67,10 @@ header {
   z-index: 10;
 }
 .top-nav {
-  height: 145px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 25px;
+}
+.top-nav li {
+  background: #39444b;
 }
 .top-nav li a {
   color: #fff;
@@ -89,19 +89,12 @@ header {
   background: none;
   color: #4bcaff;
 }
-.logos {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
+.logo {
+  width: 100%;
 }
-.logos .logo {
-  margin-right: 20px;
+button.navbar-toggle img {
+  width: 30px;
+  height: 30px;
 }
 .slick-slider {
   overflow: hidden;
