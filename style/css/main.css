@@ -199,6 +199,7 @@ button.navbar-toggle img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .adds li {
   text-align: center;
@@ -248,6 +249,9 @@ button.navbar-toggle img {
   text-align: center;
   height: 399px;
 }
+.certificate img {
+  width: 230px;
+}
 .text-block {
   display: -webkit-flex;
   display: -moz-flex;
@@ -256,6 +260,7 @@ button.navbar-toggle img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .our-clients {
   height: 500px;

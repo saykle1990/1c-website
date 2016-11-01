@@ -30,6 +30,10 @@
     src: url(../fonts/segoeuisym.ttf);
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .text {
   margin-bottom: 30px;
 }
@@ -92,6 +96,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .adds li {
   text-align: center;
@@ -141,6 +146,9 @@
   text-align: center;
   height: 399px;
 }
+.certificate img {
+  width: 230px;
+}
 .text-block {
   display: -webkit-flex;
   display: -moz-flex;
@@ -149,6 +157,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .our-clients {
   height: 500px;
