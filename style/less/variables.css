@@ -34,6 +34,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+.row {
+  overflow: hidden;
+}
 .text {
   margin-bottom: 30px;
 }

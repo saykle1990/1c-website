@@ -30,6 +30,13 @@
     src: url(../fonts/segoeuisym.ttf);
 }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  overflow: hidden;
+}
 .text {
   margin-bottom: 30px;
 }
@@ -56,14 +63,11 @@ span {
 header {
   background: #39444b;
   height: 145px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
 }
 .top-nav {
+  position: relative;
   margin-top: 25px;
+  z-index: 10;
 }
 .top-nav li {
   background: #39444b;
@@ -85,8 +89,11 @@ header {
   background: none;
   color: #4bcaff;
 }
-.logo {
-  width: 100%;
+#bts-logo {
+  height: auto;
+}
+#1c-logo {
+  height: auto;
 }
 button.navbar-toggle img {
   width: 30px;

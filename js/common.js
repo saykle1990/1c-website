@@ -1,5 +1,9 @@
 $('.slick-slider').slick({
-
+    variableWidth: true,
+    centerMode: true,
+    slide: '.slide',
+    slidesToShow: 1,
+    slidesToScroll: 1
 });
 $('.clients-slick').slick({
     slidesToShow: 5,
@@ -49,4 +53,51 @@ $('.clients-slick').slick({
     // instead of a settings object
   ]
 });
+
+(function ($){
+
+$.fn.hoverPlugin = function () {
+
+    $(this).hover
+
+    (function(){
+
+    var hover = $(this).data('onHover');
+    $(this).data('src', $(this).children().attr('src'));
+
+        $(this).children().attr('src', hover);
+    },
+
+    function(){
+
+        $(this).children().attr('src', $(this).data('src'));
+
+    });
+
+}
+
+})(jQuery);
+
+
+$('.adds a').hoverPlugin();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

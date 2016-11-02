@@ -26,22 +26,32 @@
 .adds{
     .flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     li{
         text-align: center;
         vertical-align: middle;
         figure{
             img{
+                width: 100px;
                 display: block;
                 margin: 0 auto;
                 border: 1px solid #fff;
             }
         }
         a{
-            text-align: center;
+            text-align: left;
             display: block;
             margin-top: 20px;
-            .font(@style: '',#fff,100%);
+            .font(bold,#fff,100%);
             text-transform: uppercase;
+            &:hover{
+                color: @ocean;
+            }
+            img{
+                width: 50px;
+                display: block;
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -84,8 +94,11 @@
 }
 .our-clients{
     height: 500px;
-    background: @ocean;
+    background: @ocean-x1;
     color: #fff;
+    .clients-slick{
+        background: inherit;
+    }
 }
 .contacts{
     background: url(/images/pexels-photo-113850.png)no-repeat 50% 50%;
@@ -132,4 +145,8 @@
         display: block;
         margin-top: 40px;
     }
+}
+footer{
+    min-height: 170px;
+    background: @ocean-x1;
 }

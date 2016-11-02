@@ -5,16 +5,13 @@ p,a,ul,li,span{
 header{
     background: @ocean;
     height: 145px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
+
 
 }
 .top-nav{
-
+    position: relative;
     margin-top: 25px;
+    z-index: 10;
     li{
         background: @ocean;
         a{
@@ -36,9 +33,12 @@ header{
         }
     }
 }
-.logo{
-        width: 100%;
-    }
+#bts-logo{
+    height: auto;
+}
+#1c-logo{
+    height: auto;
+}
 button.navbar-toggle{
     img{
         width: 30px;

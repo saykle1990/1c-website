@@ -34,6 +34,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+.row {
+  overflow: hidden;
+}
 .text {
   margin-bottom: 30px;
 }
@@ -97,24 +100,34 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .adds li {
   text-align: center;
   vertical-align: middle;
 }
 .adds li figure img {
+  width: 100px;
   display: block;
   margin: 0 auto;
   border: 1px solid #fff;
 }
 .adds li a {
-  text-align: center;
+  text-align: left;
   display: block;
   margin-top: 20px;
-  font-family: Segoe '';
+  font-family: Segoe bold;
   color: #ffffff;
   font-size: 100%;
   text-transform: uppercase;
+}
+.adds li a:hover {
+  color: #39444b;
+}
+.adds li a img {
+  width: 50px;
+  display: block;
+  margin-bottom: 10px;
 }
 .text li {
   margin-left: 10px;
@@ -161,8 +174,11 @@
 }
 .our-clients {
   height: 500px;
-  background: #39444b;
+  background: #4f5e68;
   color: #fff;
+}
+.our-clients .clients-slick {
+  background: inherit;
 }
 .contacts {
   background: url(/images/pexels-photo-113850.png) no-repeat 50% 50%;
@@ -209,4 +225,8 @@
   margin-bottom: 10px;
   display: block;
   margin-top: 40px;
+}
+footer {
+  min-height: 170px;
+  background: #4f5e68;
 }
