@@ -15,14 +15,14 @@
     src: url(../fonts/segoeuil.ttf);
 }
 @font-face {
-    font-family: Segoe bold Italic;
+    font-family: Segoe boldItalic;
     src: url(../fonts/segoeuiz.ttf);
 }
 @font-face {
     font-family: Segoe semibold;
-    src: url(../fonts/segoeuisb.ttf);
+    src: url(../fonts/seguisb.ttf);
 }
 @font-face {
     font-family: Segoe symbol;
-    src: url(../fonts/segoeuisym.ttf);
+    src: url(../fonts/seguisym.ttf);
 }

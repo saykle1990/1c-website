@@ -18,16 +18,16 @@
     src: url(../fonts/segoeuil.ttf);
 }
 @font-face {
-    font-family: Segoe bold Italic;
+    font-family: Segoe boldItalic;
     src: url(../fonts/segoeuiz.ttf);
 }
 @font-face {
     font-family: Segoe semibold;
-    src: url(../fonts/segoeuisb.ttf);
+    src: url(../fonts/seguisb.ttf);
 }
 @font-face {
     font-family: Segoe symbol;
-    src: url(../fonts/segoeuisym.ttf);
+    src: url(../fonts/seguisym.ttf);
 }
 
 .no-padding {
@@ -91,7 +91,8 @@
   margin-top: 5px;
   border-bottom: 1px solid #39444b;
 }
-.adds {
+.adds,
+.nav-tabs {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -101,18 +102,22 @@
   align-items: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  border-bottom: 0;
 }
-.adds li {
+.adds li,
+.nav-tabs li {
   text-align: center;
   vertical-align: middle;
 }
-.adds li figure img {
+.adds li figure img,
+.nav-tabs li figure img {
   width: 100px;
   display: block;
   margin: 0 auto;
   border: 1px solid #fff;
 }
-.adds li a {
+.adds li a,
+.nav-tabs li a {
   text-align: left;
   display: block;
   margin-top: 20px;
@@ -121,13 +126,33 @@
   font-size: 100%;
   text-transform: uppercase;
 }
-.adds li a:hover {
+.adds li a:hover,
+.nav-tabs li a:hover {
   color: #39444b;
 }
-.adds li a img {
+.adds li a img,
+.nav-tabs li a img {
   width: 50px;
   display: block;
   margin-bottom: 10px;
+}
+.adds li[role="presentation"] span,
+.nav-tabs li[role="presentation"] span {
+  font-size: 120%;
+}
+.adds li[role="presentation"] a:hover,
+.nav-tabs li[role="presentation"] a:hover,
+.adds li[role="presentation"] a.active,
+.nav-tabs li[role="presentation"] a.active {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #39444b;
+}
+.adds li[role="presentation"].active a,
+.nav-tabs li[role="presentation"].active a {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #39444b;
 }
 .text li {
   margin-left: 10px;
@@ -154,6 +179,17 @@
 }
 .text p {
   margin-top: 20px;
+}
+article.main-text * {
+  border: 0;
+}
+article.main-text .caption {
+  text-transform: uppercase;
+}
+article.main-text .caption p {
+  font-family: Segoe '';
+  color: #39444b;
+  font-size: 130%;
 }
 .certificate {
   text-align: center;
@@ -205,7 +241,7 @@
   background: transparent;
   border: 2px solid #fff;
 }
-.contacts .form-group input[type="submit"] {
+.contacts .form-group .submit-btn {
   margin-top: 40px;
   height: 60px;
   line-height: 60px;
@@ -218,6 +254,12 @@
   color: #ffffff;
   font-size: 100%;
 }
+.contacts .for-user-text {
+  font-family: Segoe semibold;
+  color: #ffffff;
+  font-size: 120%;
+  margin-bottom: 30px;
+}
 .contacts .for-user-info li:nth-child(3) {
   margin-top: 10px;
 }
@@ -229,4 +271,23 @@
 footer {
   min-height: 170px;
   background: #4f5e68;
+}
+/*============= modal styles ================*/
+.modal-content .modal-footer button {
+  text-transform: uppercase;
+  font-family: Segoe '';
+  color: #39444b;
+  font-size: 100%;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #4bcaff;
+}
+.modal-content .modal-footer button[data-dismiss] {
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.modal-content .modal-footer button[type="submit"] {
+  font-family: Segoe semibold;
+  color: #ffffff;
+  font-size: 100%;
 }

@@ -14,6 +14,33 @@
 </head>
 <body>
 
+  <!--======================= MODAL CONTACT FORM====================-->
+
+<div class="modal fade modal-form-sm" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default col-sm-3 col-xs-4" data-dismiss="modal">закрыть</button>
+        <button type="submit" class="btn blue-bg col-sm-8 col-xs-7">отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--==================== END MODAL CONTACT FORM====================-->
+
+
+
+
    <header>
        <div class="container-fluid">
            <div class="row">
@@ -23,15 +50,15 @@
                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu-collapse" aria-expanded="false">
                            <img src="images/menu.svg" alt="">
                           </button>
-                          <a class="navbar-brand col-lg-6 col-md-6 col-sm-6" href="#"><img id="bts-logo" src="images/logo-BTS.png" alt="" class="logo"></a>
+                          <a class="navbar-brand col-lg-5 col-md-6 col-sm-6" href="index.html"><img id="bts-logo" src="images/logo-BTS.png" alt="" class="logo"></a>
                           <a class="navbar-brand col-lg-5 col-md-6 col-sm-6" href="#"><img id="ones-logo" src="images/logo-1c.png" alt="" class="logo"></a>
                       </div>
 
 
                        <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
                            <ul class="nav navbar-nav top-nav">
-                               <li><a href="#">Главная</a></li>
-                               <li><a href="#">О нас</a></li>
+                               <li><a href="index.html">Главная</a></li>
+                               <li><a href="about-us.html">О нас</a></li>
                                <li><a href="#">Продукты</a></li>
                                <li><a href="#">Аренда 1С</a></li>
                                <li><a href="#">Услуги</a></li>
@@ -49,46 +76,36 @@
            <div class="row">
                <div class="container">
                    <h1 class="title-white title">о нас</h1>
-                   <!--<ul class="adds hidden">
-                       <li class="col-lg-3">
-                           <figure class="service"><img src="images/image1.png" alt=""></figure>
-                           <a href="#">Продажа продуктов 1С</a>
+
+                   <ul class="nav nav-tabs">
+                       <li role="presentation" class="col-sm-3 col-xs-6">
+                       <a href="#history" aria-controls="history" role="tab" data-toggle="tab">
+                       <img src="images/icons/big-towers.svg" alt="">
+                       <span class="tab-nam">история</span>
+                       </a>
                        </li>
-                       <li class="col-lg-3">
-                           <figure class="service"><img src="images/image2.png" alt=""></figure>
-                           <a href="#">сопровождение и внедрение продуктов 1С</a>
+                       <li role="presentation" class="col-sm-3 col-xs-6">
+                       <a href="#mission" aria-controls="mission" role="tab" data-toggle="tab">
+                       <img src="images/icons/checklist.svg" alt="">
+                       <span class="tab-nam">миссия</span>
+                       </a>
                        </li>
-                       <li class="col-lg-3">
-                           <figure class="service"><img src="images/image3.png" alt=""></figure>
-                           <a href="#">аренда 1с</a>
+                       <li role="presentation" class="col-sm-3 col-xs-6">
+                       <a href="#goods" aria-controls="goods" role="tab" data-toggle="tab">
+                       <img src="images/icons/libra.svg" alt="">
+                       <span class="tab-nam">ценности</span>
+                       </a>
                        </li>
-                       <li class="col-lg-3">
-                           <figure class="service"><img src="" alt=""></figure>
-                           <a href="#">продажа программного обеспечения других производителей</a>
-                       </li>
-                   </ul>-->
-                   <ul class="adds">
-                       <li class="col-sm-3 col-xs-6">
-                           <a href="#" data-on-hover="images/icons/big-towers-hover.svg">
-                           <img src="images/icons/big-towers.svg" alt="">
-                           история</a>
-                       </li>
-                       <li class="col-sm-3 col-xs-6">
-                           <a href="#" data-on-hover="images/icons/checklist-hover.svg">
-                           <img src="images/icons/checklist.svg" alt="">
-                           миссия</a>
-                       </li>
-                       <li class="col-sm-3 col-xs-6">
-                           <a href="#" data-on-hover="images/icons/libra-hover.svg">
-                           <img src="images/icons/libra.svg" alt="">
-                           ценности</a>
-                       </li>
-                       <li class="col-sm-3 col-xs-6">
-                           <a href="#" data-on-hover="images/icons/team-hover.svg">
-                           <img src="images/icons/team.svg" alt="">
-                           команда</a>
+                       <li role="presentation" class="col-sm-3 col-xs-6">
+                       <a href="#team" aria-controls="team" role="tab" data-toggle="tab">
+                       <img src="images/icons/team.svg" alt="">
+                       <span class="tab-nam">команда</span>
+                       </a>
                        </li>
                    </ul>
+
+
+
                </div>
            </div>
        </div>
@@ -98,12 +115,84 @@
            <div class="row">
                <div class="container no-padding">
                    <div class="main-content">
-                       <p class="title-black title col-sm-8">направление «1С»</p>
-                       <article class="text-block col-sm-12 col-xs-12">
 
-                        content
+                       <div class="tab-content col-xs-12">
+                       <div class="tab-pane fade in active" id="history" role="tabpanel">
+                           <p class="title-black title col-sm-8">история компании</p>
+                       </div>
+                       <div class="tab-pane fade" id="mission" role="tabpanel">
+                           <p class="title-black title col-sm-8">миссия</p>
+                       </div>
+                       <div class="tab-pane fade" id="goods" role="tabpanel">
+                           <p class="title-black title col-sm-8">ценности</p>
+                       </div>
+                       <div class="tab-pane fade" id="team" role="tabpanel">
+                           <p class="title-black title col-sm-8">наша команда</p>
 
-                       </article>
+                           <article class="main-text col-xs-12">
+
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+                               <div class="col-xs-6 col-md-3 col-sm-4"><a href="#" class="thumbnail">
+                                       <img src="http://placehold.it/220" alt="" class="img-circle">
+                                       <div class="caption text-center">
+                                           <p>имя</p>
+                                           <p>должность</p>
+                                       </div>
+                                   </a></div>
+
+                           </article>
+
+                        </div>
+                       </div>
+
                    </div>
                </div>
            </div>
@@ -115,38 +204,27 @@
                <div class="contacts">
                    <div class="container">
                        <p class="title-white title">контакты</p>
-                       <form action="">
                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
-                           <div class="form-group">
-                               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12" for="#name">Имя</label>
-                               <input class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="email" type="text">
-                           </div>
-
-                           <div class="form-group">
-                               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12" for="#email">Email</label>
-                               <input class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="email" type="text">
-                           </div>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
-                               <span class="blue">"BTS PRO" SRL</span>
+                              <p class="for-user-text">
+                                  Возникли вопросы или хотите сделать заказ?
+                                  <br> Свяжитесь  с нашим менеджером по продажам
+                               </p>
                                <ul class="for-user-info text-white">
-                                   <li>Режим работы: Пн-Пт</li>
-                                   <li>09:00 - 18:00</li>
+                                   <li>Луцик Виолета</li>
+                                   <li>Менеджер</li>
                                    <li>Ул. Ion Creanga 6V,</li>
-                                   <li>Кишинёв, Молдова</li>
                                    <li>+373 22 870 207</li>
-                                   <li>+373 22 595 858</li>
                                    <li><a class="text-white" href="">1c@bts.md</a></li>
                                </ul>
                            </div>
                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+
                              <div class="form-group">
-                                <label for="#user-message">что вы нам хотите сказать?</label>
-                               <textarea  class="col-lg-12 col-md-12 col-sm-12 col-xs-12" name="" id="user-message" cols="30" rows="6"></textarea>
-                                <input class="col-lg-4 col-md-5 col-sm-5 col-xs-12" type="submit" value="MESSAGE">
+
+                                <input class="col-lg-4 col-md-5 col-sm-5 col-xs-12 submit-btn" data-toggle="modal" type="button" data-target=".modal-form-sm" value="MESSAGE">
+
                              </div>
                            </div>
-                       </form>
                    </div>
                </div>
            </div>

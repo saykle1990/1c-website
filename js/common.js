@@ -54,33 +54,59 @@ $('.clients-slick').slick({
   ]
 });
 
-(function ($){
 
-$.fn.hoverPlugin = function () {
-
-    $(this).hover
-
-    (function(){
-
-    var hover = $(this).data('onHover');
-    $(this).data('src', $(this).children().attr('src'));
-
-        $(this).children().attr('src', hover);
-    },
-
-    function(){
-
-        $(this).children().attr('src', $(this).data('src'));
-
-    });
-
-}
-
-})(jQuery);
-
-
-$('.adds a').hoverPlugin();
-
+//(function ($){
+//
+//$.fn.hoverPlugin = function () {
+//
+//    $this = $( this );
+//
+//    var hover = $(this).data('onHover');
+//
+//    var change = $this.data('onHover');
+//
+//
+//    $this.hover //hover fn
+//
+//    (function(){
+//
+//    var hover = $(this).data('onHover');
+//
+//    $this.data('src', $(this).children().attr('src'));
+//
+//        $(this).children().attr('src', hover);
+//    },
+//
+//    function(){
+//
+//        $(this).children().attr('src', $(this).data('src'));
+//
+//    });
+//
+//    $this.on('click', function(){ //change fn
+//
+//        $(this).each(function(){
+//
+//            $this.removeClass('selected');
+//
+//        });
+//
+//        $(this).addClass('selected');
+//
+//    });
+//
+//    $(this).hasClass('selected', function(){
+//
+//                $this.find("img").attr('src', change);
+//
+//            });
+//
+//}
+//
+//})(jQuery);
+//
+//
+//$('.adds a').hoverPlugin();
 
 
 
