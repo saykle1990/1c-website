@@ -1,10 +1,13 @@
-$('.slick-slider').slick({
+$(document).ready(function(){
+
+    $('.slick-slider').slick({
     variableWidth: true,
     centerMode: true,
     slide: '.slide',
     slidesToShow: 1,
     slidesToScroll: 1
-});
+    });
+
 $('.clients-slick').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -55,58 +58,61 @@ $('.clients-slick').slick({
 });
 
 
-//(function ($){
-//
-//$.fn.hoverPlugin = function () {
-//
-//    $this = $( this );
-//
-//    var hover = $(this).data('onHover');
-//
-//    var change = $this.data('onHover');
-//
-//
-//    $this.hover //hover fn
-//
-//    (function(){
-//
-//    var hover = $(this).data('onHover');
-//
-//    $this.data('src', $(this).children().attr('src'));
-//
-//        $(this).children().attr('src', hover);
-//    },
-//
-//    function(){
-//
-//        $(this).children().attr('src', $(this).data('src'));
-//
-//    });
-//
-//    $this.on('click', function(){ //change fn
-//
-//        $(this).each(function(){
-//
-//            $this.removeClass('selected');
-//
-//        });
-//
-//        $(this).addClass('selected');
-//
-//    });
-//
-//    $(this).hasClass('selected', function(){
-//
-//                $this.find("img").attr('src', change);
-//
-//            });
-//
-//}
-//
-//})(jQuery);
-//
-//
-//$('.adds a').hoverPlugin();
+//ajax loader
+
+(function($){
+
+    $.fn.loader = function(div){
+
+        var $this = $(this);
+
+            this.on('click', function(e){
+
+                $this.each(function(){
+
+                    $this.parent().removeClass('selected');
+
+                });
+
+            $(this).parent().addClass('selected');
+
+            $(div).html();
+
+            var filename = $(this).attr("href");
+
+            if(filename == "#"){
+
+                $(div).html('<p class="title" style="color:red">не прописана ссылка</p>');
+
+                return false;
+            }
+
+            e.preventDefault();
+
+            console.log(filename);
+
+            $.ajax({
+
+               url: filename,
+
+               success: function(result){
+
+                   $(div).html(result);
+
+                  }});
+            });
+    };
+
+})(jQuery);
+
+    $('.category-list li a').loader('.main-content');
+
+});
+
+
+
+
+
 
 
 

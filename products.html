@@ -25,23 +25,23 @@
       </div>
       <div class="modal-body">
         <form action="">
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
-                           <div class="form-group col-sm-6">
-                               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" for="#name">Имя</label>
-                               <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="email" type="text">
-                           </div>
+           <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 no-padding">
+           <div class="form-group col-sm-6">
+               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" for="#name">Имя</label>
+               <input class="col-lg-12 col-md-10 col-sm-10 col-xs-12" id="email" type="text">
+           </div>
 
-                           <div class="form-group col-sm-6">
-                               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" for="#email">Email</label>
-                               <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="email" type="text">
-                           </div>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                             <div class="form-group">
-                                <label for="#user-message">что вы нам хотите сказать?</label>
-                               <textarea  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " name="" id="user-message" cols="30" rows="6"></textarea>
-                             </div>
-                           </div>
+           <div class="form-group col-sm-6">
+               <label class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding" for="#email">Email</label>
+               <input class="col-lg-12 col-md-10 col-sm-10 col-xs-12" id="email" type="text">
+           </div>
+           </div>
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <div class="form-group">
+                <label for="#user-message">что вы нам хотите сказать?</label>
+               <textarea  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " name="" id="user-message" cols="30" rows="6"></textarea>
+             </div>
+           </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -54,7 +54,7 @@
 
   <!--==================== END MODAL CONTACT FORM====================-->
 
-<header>
+   <header>
        <div class="container-fluid">
            <div class="row">
                <div class="container no-padding">
@@ -66,11 +66,13 @@
                           <a class="navbar-brand col-lg-6 col-md-6 col-sm-6" href="#"><img id="bts-logo" src="images/logo-BTS.png" alt="" class="logo"></a>
                           <a class="navbar-brand col-lg-5 col-md-6 col-sm-6" href="#"><img id="ones-logo" src="images/logo-1c.png" alt="" class="logo"></a>
                       </div>
+
+
                        <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
                            <ul class="nav navbar-nav top-nav">
-                               <li><a href="index.html">Главная</a></li>
-                               <li class="active"><a href="about-us.html">О нас</a></li>
-                               <li><a href="products.html">Продукты</a></li>
+                               <li class=""><a href="index.html">Главная</a></li>
+                               <li><a href="about-us.html">О нас</a></li>
+                               <li class="active"><a href="products.html">Продукты</a></li>
                                <li><a href="rent.html">Аренда 1С</a></li>
                                <li><a href="#">Услуги</a></li>
                                <li><a href="#">Прайс лист</a></li>
@@ -83,16 +85,21 @@
        </div>
    </header>
 
-   <article class="navigation blue-bg">
+   <article class="navigation blue-bg products-content">
        <div class="container-fluid">
            <div class="row">
                <div class="container">
-                   <h1 class="title-white title">о нас</h1>
-                   <ul class="category-list">
-                       <li class="col-sm-3 col-xs-6 selected"><a href="page/history.html"><img src="images/icons/big-towers.svg" alt="">история</a></li>
-                       <li class="col-sm-3 col-xs-6"><a href="page/mission.html"><img src="images/icons/checklist.svg" alt="">миссия</a></li>
-                       <li class="col-sm-3 col-xs-6"><a href="#"><img src="images/icons/libra.svg" alt="">ценности</a></li>
-                       <li class="col-sm-3 col-xs-6"><a href="page/team.html"><img src="images/icons/team.svg" alt="">команда</a></li>
+                   <ul class="category-list products">
+                       <li class="col-sm-3 col-xs-6 active">
+                       <a href="#">
+                       продукты 1С
+                       </a>
+                       </li>
+                       <li class="col-sm-4 col-xs-6">
+                       <a href="#">
+                       продукты других производителей
+                       </a>
+                       </li>
                    </ul>
                </div>
            </div>
@@ -104,10 +111,20 @@
                <div class="container no-padding">
                    <div class="main-content">
 
-                       <div class="col-xs-12">
-    <p class="title-black title">История компании</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptatibus veniam qui culpa soluta ipsa nemo aliquam exercitationem voluptas vel!</p>
-                        </div>
+                       <div class="tab-content col-xs-12">
+                       <div class="tab-pane fade in active" id="products-1c" role="tabpanel">
+                           <article class="main-text">
+
+                           </article>
+                       </div>
+                       <div class="tab-pane fade" id="mission" role="tabpanel">
+                           <p class="title-black title col-sm-8">миссия</p>
+                       </div>
+                       <div class="tab-pane fade" id="goods" role="tabpanel">
+                           <p class="title-black title col-sm-8">ценности</p>
+                       </div>
+
+                       </div>
 
                    </div>
                </div>
@@ -115,7 +132,9 @@
        </div>
    </section>
 
-   <section><div class="container-fluid">
+
+    <section>
+          <div class="container-fluid">
            <div class="row">
                <div class="contacts">
                    <div class="container">
@@ -144,9 +163,12 @@
                    </div>
                </div>
            </div>
-       </div></section>
+       </div>
+       </section>
 
-   <footer></footer>
+   <footer>
+
+   </footer>
 
 
 

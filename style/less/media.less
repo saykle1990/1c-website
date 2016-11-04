@@ -1,9 +1,13 @@
+@import 'variables.less';
 @media screen and (min-width: 425px) and (max-width: 768px) {
     header{
         height: 50px;
     }
     .top-nav{
         margin-top: 0;
+        li{
+            margin-right: 0;
+        }
     }
     .navbar-brand{
         padding: 10px;
@@ -30,6 +34,29 @@
     .slick-slider .slide .slide-text .eye-stopper{
         font-size: 3.5vw;
     }
+    .modal-content{
+
+        .modal-body form label{
+            font-size: 4vw;
+        }
+        .modal-footer{
+            button{
+                 text-transform: uppercase;
+                .font(@style:'',@ocean,4vw);
+                padding: 10px;
+                border-radius: 0;
+                border: 1px solid @blue;
+
+                &[data-dismiss]{
+                    color: #ccc;
+                    border: 1px solid #ccc;
+                }
+                &[type="submit"]{
+                    .font(semibold,#fff,4vw);
+                }
+            }
+        }
+    }
 }
 
 //============ resolution () =================//
@@ -41,6 +68,9 @@
     }
     .top-nav{
         margin-top: 0;
+        li{
+            margin-right: 0;
+        }
     }
     .navbar-brand{
         padding: 10px;
@@ -69,20 +99,25 @@
         font-size: 3vw;
     }
     .modal-content{
+
+        .modal-body form label{
+            font-size: 4vw;
+        }
         .modal-footer{
             button{
+                 text-transform: uppercase;
+                .font(@style:'',@ocean,4vw);
+                padding: 10px;
+                border-radius: 0;
+                border: 1px solid @blue;
+
                 &[data-dismiss]{
                     color: #ccc;
                     border: 1px solid #ccc;
                 }
                 &[type="submit"]{
-                    .font(semibold,#fff,100%);
+                    .font(semibold,#fff,4vw);
                 }
-                text-transform: uppercase;
-                .font(@style:'',@ocean,4vw);
-                padding: 10px;
-                border-radius: 0;
-                border: 1px solid @blue;
             }
         }
     }

@@ -8,7 +8,9 @@
 .navigation{
     padding-bottom:80px;
 }
-
+.products-content{
+    padding-bottom: 30px;
+}
 .title{
     margin: 70px 0 40px 0;
     &-white{
@@ -23,7 +25,7 @@
     }
 
 }
-.adds, .nav-tabs{
+.category-list{
     .flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -31,6 +33,11 @@
     li{
         text-align: center;
         vertical-align: middle;
+        &.selected{
+            a{
+                color: @ocean;
+            }
+        }
         figure{
             img{
                 width: 100px;
@@ -40,10 +47,10 @@
             }
         }
         a{
-            text-align: left;
+            text-align: center;
             display: block;
             margin-top: 20px;
-            .font(bold,#fff,100%);
+            .font(light,#fff,120%);
             text-transform: uppercase;
             &:hover{
                 color: @ocean;
@@ -51,28 +58,18 @@
             img{
                 width: 50px;
                 display: block;
-                margin-bottom: 10px;
+                margin: 0 auto 10px auto;
+
             }
         }
     }
-    li[role="presentation"]{
-        span{
-            font-size: 120%;
-        }
-        a{
-            &:hover , &.active{
-                background-color: transparent;
-                border: 1px solid transparent;
-                color: @ocean;
-            }
-        }
-        &.active{
-            a{
-                background-color: transparent;
-                border: 1px solid transparent;
-                color: @ocean;
-            }
-        }
+}
+
+.products{
+    margin-top: 20px;
+
+    li{
+        margin-right: 20px;
     }
 }
 .text{
@@ -189,7 +186,33 @@ footer{
 /*============= modal styles ================*/
 
 .modal-content{
+    border-radius: 0;
+    .modal-header{
+        background: @ocean;
+        .close{
+            color: #fff;
+            opacity: 1;
+            text-shadow: none;
+        }
+    }
+    .modal-title{
+        text-transform: uppercase;
+        .font(light,#fff,140%);
+    }
+    .modal-body{
+        overflow: hidden;
+        form{
+            overflow: hidden;
+            label{
+                text-transform: uppercase;
+                .font(light,@ocean,120%);
+                font-weight: 300;
+            }
+        }
+    }
     .modal-footer{
+        margin-top: 10px;
+        overflow: hidden;
         button{
             &[data-dismiss]{
                 color: #ccc;

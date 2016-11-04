@@ -62,6 +62,9 @@
 .navigation {
   padding-bottom: 80px;
 }
+.products-content {
+  padding-bottom: 30px;
+}
 .title {
   margin: 70px 0 40px 0;
 }
@@ -91,8 +94,7 @@
   margin-top: 5px;
   border-bottom: 1px solid #39444b;
 }
-.adds,
-.nav-tabs {
+.category-list {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -104,55 +106,41 @@
   align-items: flex-start;
   border-bottom: 0;
 }
-.adds li,
-.nav-tabs li {
+.category-list li {
   text-align: center;
   vertical-align: middle;
 }
-.adds li figure img,
-.nav-tabs li figure img {
+.category-list li.selected a {
+  color: #39444b;
+}
+.category-list li figure img {
   width: 100px;
   display: block;
   margin: 0 auto;
   border: 1px solid #fff;
 }
-.adds li a,
-.nav-tabs li a {
-  text-align: left;
+.category-list li a {
+  text-align: center;
   display: block;
   margin-top: 20px;
-  font-family: Segoe bold;
+  font-family: Segoe light;
   color: #ffffff;
-  font-size: 100%;
+  font-size: 120%;
   text-transform: uppercase;
 }
-.adds li a:hover,
-.nav-tabs li a:hover {
+.category-list li a:hover {
   color: #39444b;
 }
-.adds li a img,
-.nav-tabs li a img {
+.category-list li a img {
   width: 50px;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
 }
-.adds li[role="presentation"] span,
-.nav-tabs li[role="presentation"] span {
-  font-size: 120%;
+.products {
+  margin-top: 20px;
 }
-.adds li[role="presentation"] a:hover,
-.nav-tabs li[role="presentation"] a:hover,
-.adds li[role="presentation"] a.active,
-.nav-tabs li[role="presentation"] a.active {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: #39444b;
-}
-.adds li[role="presentation"].active a,
-.nav-tabs li[role="presentation"].active a {
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: #39444b;
+.products li {
+  margin-right: 20px;
 }
 .text li {
   margin-left: 10px;
@@ -273,6 +261,40 @@ footer {
   background: #4f5e68;
 }
 /*============= modal styles ================*/
+.modal-content {
+  border-radius: 0;
+}
+.modal-content .modal-header {
+  background: #39444b;
+}
+.modal-content .modal-header .close {
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+}
+.modal-content .modal-title {
+  text-transform: uppercase;
+  font-family: Segoe light;
+  color: #ffffff;
+  font-size: 140%;
+}
+.modal-content .modal-body {
+  overflow: hidden;
+}
+.modal-content .modal-body form {
+  overflow: hidden;
+}
+.modal-content .modal-body form label {
+  text-transform: uppercase;
+  font-family: Segoe light;
+  color: #39444b;
+  font-size: 120%;
+  font-weight: 300;
+}
+.modal-content .modal-footer {
+  margin-top: 10px;
+  overflow: hidden;
+}
 .modal-content .modal-footer button {
   text-transform: uppercase;
   font-family: Segoe '';

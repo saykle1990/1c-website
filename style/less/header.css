@@ -18,16 +18,16 @@
     src: url(../fonts/segoeuil.ttf);
 }
 @font-face {
-    font-family: Segoe bold Italic;
+    font-family: Segoe boldItalic;
     src: url(../fonts/segoeuiz.ttf);
 }
 @font-face {
     font-family: Segoe semibold;
-    src: url(../fonts/segoeuisb.ttf);
+    src: url(../fonts/seguisb.ttf);
 }
 @font-face {
     font-family: Segoe symbol;
-    src: url(../fonts/segoeuisym.ttf);
+    src: url(../fonts/seguisym.ttf);
 }
 
 .no-padding {
@@ -71,6 +71,7 @@ header {
 }
 .top-nav li {
   background: #39444b;
+  margin-right: 5px;
 }
 .top-nav li a {
   color: #fff;
@@ -85,6 +86,11 @@ header {
   color: #4bcaff;
 }
 .top-nav li a:hover {
+  border: 2px solid #4bcaff;
+  background: none;
+  color: #4bcaff;
+}
+.top-nav li.active a {
   border: 2px solid #4bcaff;
   background: none;
   color: #4bcaff;
