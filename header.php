@@ -30,12 +30,12 @@
 
                        <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
                            <ul class="nav navbar-nav top-nav">
-                               <li class="active"><a href="index.php">Главная</a></li>
-                               <li><a href="?view=about-us">О нас</a></li>
-                               <li><a href="?view=products">Продукты</a></li>
-                               <li><a href="?view=rent">Аренда 1С</a></li>
-                               <li><a href="?view=services">Услуги</a></li>
-                               <li><a href="#">Прайс лист</a></li>
+                               <li <?php if(!isset($_GET['view'])){ print 'class="active"';}?>><a href="index.php">Главная</a></li>
+                               <li <?php if(isset($_GET['view'])&& ($_GET['view']  == 'about-us')){ echo 'class="active"';}?>><a href="?view=about-us">О нас</a></li>
+                               <li <?php if(isset($_GET['view'])&& ($_GET['view']  == 'products')){ echo 'class="active"';}?>><a href="?view=products">Продукты</a></li>
+                               <li <?php if(isset($_GET['view'])&& ($_GET['view']  == 'rent')){ echo 'class="active"';}?>><a href="?view=rent">Аренда 1С</a></li>
+                               <li <?php if(isset($_GET['view'])&& ($_GET['view']  == 'services')){ echo 'class="active"';}?>><a href="?view=services">Услуги</a></li>
+                               <li <?php if(isset($_GET['view'])&& ($_GET['view']  == 'price')){ echo 'class="active"';}?>><a href="?view=price">Прайс лист</a></li>
                                <li><a href="#">Контакты</a></li>
                            </ul>
                        </div>

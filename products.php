@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/css/reset.css">
-    <link rel="stylesheet" href="style/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="style/plugins/animate.css">
-    <link rel="stylesheet" href="style/plugins/slick/slick.css">
-    <link rel="stylesheet" href="style/plugins/slick/slick-theme.css">
-    <link rel="stylesheet" href="style/css/main.css" media="all">
-    <link rel="stylesheet" href="style/less/media.css" media="all and (max-width: 1024px)">
-</head>
-<body>
 
   <!--======================= MODAL CONTACT FORM====================-->
 
@@ -54,49 +39,18 @@
 
   <!--==================== END MODAL CONTACT FORM====================-->
 
-   <header>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="container no-padding">
-                   <nav class="top-nav navbar">
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu-collapse" aria-expanded="false">
-                           <img src="images/menu.svg" alt="">
-                          </button>
-                          <a class="navbar-brand col-lg-6 col-md-6 col-sm-6" href="#"><img id="bts-logo" src="images/logo-BTS.png" alt="" class="logo"></a>
-                          <a class="navbar-brand col-lg-5 col-md-6 col-sm-6" href="#"><img id="ones-logo" src="images/logo-1c.png" alt="" class="logo"></a>
-                      </div>
-
-
-                       <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
-                           <ul class="nav navbar-nav top-nav">
-                               <li class=""><a href="index.php">Главная</a></li>
-                               <li><a href="about-us.php">О нас</a></li>
-                               <li class="active"><a href="products.html">Продукты</a></li>
-                               <li><a href="rent.php">Аренда 1С</a></li>
-                               <li><a href="#">Услуги</a></li>
-                               <li><a href="#">Прайс лист</a></li>
-                               <li><a href="#">Контакты</a></li>
-                           </ul>
-                       </div>
-                   </nav>
-               </div>
-           </div>
-       </div>
-   </header>
-
-   <article class="navigation blue-bg products-content">
+    <article class="navigation blue-bg products-content">
        <div class="container-fluid">
            <div class="row">
                <div class="container">
                    <ul class="category-list products">
                        <li class="col-sm-3 col-xs-6 active">
-                       <a href="/page/products1c.html">
+                       <a href="page/products1c.html">
                        продукты 1С
                        </a>
                        </li>
                        <li class="col-sm-4 col-xs-6">
-                       <a href="/page/otherproducts.html">
+                       <a href="page/otherproducts.html">
                        продукты других производителей
                        </a>
                        </li>
@@ -110,63 +64,26 @@
            <div class="row">
                <div class="container no-padding">
                    <div class="main-content">
-
-
+                       <ul class="products">
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/buhgalter.png" alt="" class="product-image"><span class="product-title">бухгалтерский учёт</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/torgovlia.png" alt="" class="product-image"><span class="product-title">торговля, склад, логистика</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/upravlenie.png" alt="" class="product-image"><span class="product-title">зарплата и управление персоналом</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/avtorisation.png" alt="" class="product-image"><span class="product-title">комплексная авторизация</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/documents.png" alt="" class="product-image"><span class="product-title">документо-оборот</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/crm.png" alt="" class="product-image"><span class="product-title">crm</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/roz-torgovlia.png" alt="" class="product-image"><span class="product-title">розничная торговля</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/avtobusiness.png" alt="" class="product-image"><span class="product-title">автобизнесс: автосалоны, автотехцентры</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/selhoz.png" alt="" class="product-image"><span class="product-title">Сельское хозяйство</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/service-center.png" alt="" class="product-image"><span class="product-title">сервисные центры</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/medical.png" alt="" class="product-image"><span class="product-title">здравоохранение</span></a></li>
+                           <li class="product col-md-3 col-sm-6  col-xs-12"><a href="#"><img src="/1c-website/images/icons/salon.png" alt="" class="product-image"><span class="product-title">салоны красоты</span></a></li>
+                       </ul>
 
                    </div>
                </div>
            </div>
        </div>
    </section>
-
-
-    <section>
-          <div class="container-fluid">
-           <div class="row">
-               <div class="contacts">
-                   <div class="container">
-                       <p class="title-white title">контакты</p>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
-                              <p class="for-user-text">
-                                  Возникли вопросы или хотите сделать заказ?
-                                  <br> Свяжитесь  с нашим менеджером по продажам
-                               </p>
-                               <ul class="for-user-info text-white">
-                                   <li>Луцик Виолета</li>
-                                   <li>Менеджер</li>
-                                   <li>Ул. Ion Creanga 6V,</li>
-                                   <li>+373 22 870 207</li>
-                                   <li><a class="text-white" href="">1c@bts.md</a></li>
-                               </ul>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
-
-                             <div class="form-group">
-
-                                <input class="col-lg-4 col-md-5 col-sm-5 col-xs-12 submit-btn" data-toggle="modal" type="button" data-target=".modal-form-sm" value="ЗАЯВКА">
-
-                             </div>
-                           </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       </section>
-
-   <footer>
-
-   </footer>
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="style/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="style/plugins/slick/slick.min.js"></script>
-<script src="js/common.js"></script>
-</body>
-</html>
 
 
 

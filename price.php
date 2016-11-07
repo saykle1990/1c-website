@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="container">
-                <h1 class="title-white title">аренда 1с</h1>
+                <h1 class="title-white title">прайслист</h1>
             </div>
         </div>
     </div>

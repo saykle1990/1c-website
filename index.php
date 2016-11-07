@@ -7,9 +7,17 @@ $view = empty($_GET['view'])? 'main.php' : $_GET['view'].'.php';
 
 <?php include $view?>
 
+<?php if(empty($_GET['view'])){
+
+}
+else{
+    include_once 'partials/contact-form.php';
+}
+
+
+?>
+
 <?php include_once 'footer.php'?>
-
-
 
 
 
