@@ -66,6 +66,8 @@ $('.clients-slick').slick({
 
         var $this = $(this);
 
+        $(this).first().parent().addClass('selected');
+
             this.on('click', function(e){
 
                 $this.each(function(){
