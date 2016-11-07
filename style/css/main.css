@@ -320,7 +320,7 @@ article.main-text .caption p {
   background: inherit;
 }
 .contacts {
-  background: url(/images/pexels-photo-113850.png) no-repeat 50% 50%;
+  background: url(../../images/pexels-photo-113850.png) no-repeat 50% 50%;
   background-size: cover;
 }
 .contacts .form-group {

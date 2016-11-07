@@ -70,10 +70,10 @@
 
                        <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
                            <ul class="nav navbar-nav top-nav">
-                               <li class=""><a href="index.html">Главная</a></li>
-                               <li><a href="about-us.html">О нас</a></li>
+                               <li class=""><a href="index.php">Главная</a></li>
+                               <li><a href="about-us.php">О нас</a></li>
                                <li class="active"><a href="products.html">Продукты</a></li>
-                               <li><a href="rent.html">Аренда 1С</a></li>
+                               <li><a href="rent.php">Аренда 1С</a></li>
                                <li><a href="#">Услуги</a></li>
                                <li><a href="#">Прайс лист</a></li>
                                <li><a href="#">Контакты</a></li>

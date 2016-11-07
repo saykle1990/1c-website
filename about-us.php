@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/css/reset.css">
-    <link rel="stylesheet" href="style/plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="style/plugins/animate.css">
-    <link rel="stylesheet" href="style/plugins/slick/slick.css">
-    <link rel="stylesheet" href="style/plugins/slick/slick-theme.css">
-    <link rel="stylesheet" href="style/css/main.css" media="all">
-    <link rel="stylesheet" href="style/less/media.css" media="all and (max-width: 1024px)">
-</head>
-<body>
 
   <!--======================= MODAL CONTACT FORM====================-->
 
@@ -53,37 +38,7 @@
 </div>
 
   <!--==================== END MODAL CONTACT FORM====================-->
-
-<header>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="container no-padding">
-                   <nav class="top-nav navbar">
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu-collapse" aria-expanded="false">
-                           <img src="images/menu.svg" alt="">
-                          </button>
-                          <a class="navbar-brand col-lg-6 col-md-6 col-sm-6" href="#"><img id="bts-logo" src="images/logo-BTS.png" alt="" class="logo"></a>
-                          <a class="navbar-brand col-lg-5 col-md-6 col-sm-6" href="#"><img id="ones-logo" src="images/logo-1c.png" alt="" class="logo"></a>
-                      </div>
-                       <div class="col-lg-8 collapse navbar-collapse" id="top-menu-collapse">
-                           <ul class="nav navbar-nav top-nav">
-                               <li><a href="index.html">Главная</a></li>
-                               <li class="active"><a href="about-us.html">О нас</a></li>
-                               <li><a href="products.html">Продукты</a></li>
-                               <li><a href="rent.html">Аренда 1С</a></li>
-                               <li><a href="#">Услуги</a></li>
-                               <li><a href="#">Прайс лист</a></li>
-                               <li><a href="#">Контакты</a></li>
-                           </ul>
-                       </div>
-                   </nav>
-               </div>
-           </div>
-       </div>
-   </header>
-
-   <article class="navigation blue-bg">
+  <article class="navigation blue-bg">
        <div class="container-fluid">
            <div class="row">
                <div class="container">
@@ -144,24 +99,8 @@
                    </div>
                </div>
            </div>
-       </div></section>
-
-   <footer></footer>
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="style/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="style/plugins/slick/slick.min.js"></script>
-<script src="js/common.js"></script>
-</body>
-</html>
-
-
-
-
+       </div>
+   </section>
 
 
 <!--
